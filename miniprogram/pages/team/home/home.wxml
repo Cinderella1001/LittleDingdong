@@ -1,0 +1,19 @@
+<!--pages/team/home/home.wxml-->
+
+<view class="content">
+ 
+  <view class="bg-img padding-top-xl flex align-end" style="background-image: url('../../../images/4.jpg');height: 450rpx;" bindtap="PageChangeToTeam">
+    <view class="bg-shadeBottom padding padding-top-xl flex-sub">
+      团队背诵
+    </view>
+  </view>
+
+   <view class="cu-bar bg-white solid-bottom margin-top">   </view>
+
+  <view class="bg-img padding-top-xl flex align-end" style="background-image: url('https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg');height: 450rpx;">
+    <view class="bg-shadeBottom padding padding-top-xl flex-sub">
+      竞赛模式
+    </view>
+  </view>
+</view>
+
