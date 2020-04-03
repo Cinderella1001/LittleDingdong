@@ -1,0 +1,48 @@
+page{
+  height:100%;
+}
+.root{
+  display:flex;
+  flex-direction:  column;
+  height:100%;
+  background-color: #f0f0f0;
+
+}
+.footer{
+ 
+  margin:30rpx;
+  display:flex;
+  justify-content:space-between;
+  color:#333;
+}
+.footer.text{
+   font-size:25rpx;
+  text-align: center;
+ 
+}
+.portals{
+  display:flex;
+  margin-bottom:15px;
+}
+.portals .item{
+  flex:1;
+}
+.portals .item image{
+  width:60px;
+  height:60px;
+  display:block;
+  margin:10px auto;
+}
+.portals .item text{
+  font-size:12px;
+  text-align: center;
+  display:block;
+
+}
+.content{
+  flex:1;
+  background-color: #93b5cf;
+  color:#ccc;
+  overflow:hidden;
+
+}

@@ -1,0 +1,39 @@
+<view class="page">
+
+   <!--文本输入框-->
+   <view  class="input_counter">
+      <input class="input" placeholder="请输入要查询的单词~" bindinput="inputWord">  </input>
+   </view>
+
+   <!--显示与隐藏 wx:if是遇true显示，hidden是遇false显示
+      wx:if在隐藏的时候不渲染，而hidden在隐藏时仍然渲染，只是不呈现-->
+   <view wx:if="{{flag}}" class="showwindow" bindtap="onClick">{{inputWord}}</view>
+   
+   <view wx:if="{{!(flag)&&(inputWord)}}" class="showwindow">
+    <!--缩放 scaleToFill 不保持纵横比缩放图片，使图片的宽高完全拉伸至填满 image 元素-->
+    <image class="read"  src='https://6465-dev-qt1a0-1301454819.tcb.qcloud.la/sound.png?sign=756b763189eab308e12f1e96b8ea93d7&t=1585841889'  mode="scaleToFill" bindtap='read'></image>
+
+    <!--一个可以分享的按钮，分享给好友，好友可以通过分享进入小程序-->
+    <button open-type="share"> <image class="sc"  src='https://6465-dev-qt1a0-1301454819.tcb.qcloud.la/zf.png?sign=47766026d817e422ea1cb9df276590f8&t=1585841862'  mode="scaleToFill"></image></button> 
+
+    <!--word——查询的单词，audio——单词的发音-->
+    <view style="font-size:35rpx;">  {{word}} 【{{audio}}】</view>
+
+    <view style="height:20px;"></view>
+
+    <!--definition  display:inline——内联模式，与周围元素在同一行-->
+    <view>{{definition}}</view>
+    <view> {{defen[0].first}}<view style="color:red;display:inline;">{{defen[0].mid}}</view> {{defen[0].last}}</view>
+    <!--翻译-->
+    <view>{{defen[0].translation}}</view>
+
+    <view style="height:10px;"></view>
+    <view>{{defen[1].first}} <view style="color:red;display:inline;">{{defen[1].mid}}</view> {{defen[1].last}}</view>
+    <view>{{defen[1].translation}}</view>
+
+    <view style="height:10px;"></view>
+    <view>{{defen[2].first}} <view style="color:red;display:inline;">{{defen[2].mid}}</view> {{defen[2].last}}</view>
+    <view>{{defen[2].translation}}</view>
+  </view>
+
+</view>

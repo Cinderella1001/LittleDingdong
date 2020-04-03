@@ -1,0 +1,39 @@
+<view class="list">
+
+   <view class="cu-bar bg-white solid-bottom margin-top">
+    <view class="action">
+    <text class="cuIcon-title text-blue"></text>目前本程序所支持的背诵书目
+    </view>
+   </view>
+  <view class="inner">
+
+        <view class="item">
+            <image src="https://6465-dev-qt1a0-1301454819.tcb.qcloud.la/chuzhong.jpg?sign=97bc4019113205bf19cd1810249f7bbd&t=1585842452"></image>
+        <text>初中</text>
+            </view>
+
+        <view class="item">
+       <image src="https://6465-dev-qt1a0-1301454819.tcb.qcloud.la/4.jpg?sign=9a65bcccfbcb47fba98baea585e3600f&t=1585618162"></image>
+        <text>四级</text>
+        </view>
+
+       <view class="item">
+             <image src="https://6465-dev-qt1a0-1301454819.tcb.qcloud.la/6.jpg?sign=18d0723ce7cae77b6b44617a2a19f062&t=1585842401"></image>
+        <text>六级</text>
+       </view>
+       <view class="item" >
+        <image src="https://6465-dev-qt1a0-1301454819.tcb.qcloud.la/kaoyan.jpg?sign=707cd04c150031676e94da9b38418789&t=1585842415"  bindtap="lianjie" data-name="kaoyan"></image>
+        <text>考研</text>
+       </view>
+
+          <view class="item"  >
+       <image src="https://6465-dev-qt1a0-1301454819.tcb.qcloud.la/richang.jpg?sign=8bcf85d1a3fb5d550bfb530848e9afc2&t=1585842432"></image>
+        <text>日常</text>
+       </view>
+
+       <view class="item">
+        <image src="https://6465-dev-qt1a0-1301454819.tcb.qcloud.la/zhichang.jpg?sign=4e42d4b4f6403139b9cf94c86aa6525c&t=1585842441"></image>
+        <text>职业</text>
+       </view>
+     </view>
+</view>

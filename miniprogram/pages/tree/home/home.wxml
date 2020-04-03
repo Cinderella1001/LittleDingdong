@@ -1,0 +1,43 @@
+<!--pages/tree/home/home.wxml-->
+
+<scroll-view scroll-y class="scrollPage">
+
+  <view class="UCenter-bg">
+    <image src="" class="png" mode="widthFix"></image>
+    <view class="text-xl">滴水穿词
+      <text class="text-df">v1.0</text>
+    </view>
+    <view class="margin-top-sm">
+      <text>By:Little Dingdong</text>
+    </view>
+  </view>
+
+
+  <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+    
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/tree/drop/drop" hover-class="none">
+        <text class="cuIcon-formfill text-green"></text>
+        <text class="text-grey">水滴值</text>
+      </navigator>
+    </view>
+
+     <view class="cu-item arrow">
+       <navigator class="content" url="/pages/tree/plant/plant" hover-class="none">
+        <text class="cuIcon-writefill text-cyan"></text>
+        <text class="text-grey">植树</text>
+        </navigator>
+    </view>
+
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/tree/plant/plant" hover-class="none">
+        <text class="cuIcon-appreciatefill text-red"></text>
+        <text class="text-grey">成就</text>
+         </navigator>
+    </view>
+  
+ </view>
+
+  <view class="cu-tabbar-height"></view>
+
+</scroll-view>

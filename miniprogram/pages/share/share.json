@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+      "search": "/pages/search/home/home",
+      "recite": "/pages/recite/home/home",
+      "team": "/pages/team/home/home",
+      "tree": "/pages/tree/home/home"
+    }
+}
