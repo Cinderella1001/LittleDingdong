@@ -1,0 +1,191 @@
+<view class="VerticalBox">
+  <scroll-view class="VerticalNav nav" scroll-y scroll-with-animation style="height:calc(100vh)" scroll-top="{{VerticalNavTop}}">
+    <view class="cu-item {{index==TabCur?'text-green cur':''}}" wx:for="{{list}}" wx:key bindtap='tabSelect' data-id="{{index}}">
+      {{item.name}}
+    </view>
+  </scroll-view>
+  
+  <scroll-view class="VerticalMain" scroll-y scroll-with-animation style="height:calc(100vh)" scroll-into-view="main-{{MainCur}}" bindscroll="VerticalMain">
+
+      <view class="padding-top padding-lr" wx:for="{{list}}" wx:key id="main-{{index}}">
+      <view class='cu-bar solid-bottom bg-white'>
+        <view class='action'>
+          <text class='cuIcon-title text-green'></text> {{item.name}} </view>
+      </view>
+
+      <view class="cu-list menu-avatar" wx:if="{{index==1}}">
+        <view class="cu-item">
+          <view class="cu-avatar round lg" style="background-image:url(https://6465-dev-qt1a0-1301454819.tcb.qcloud.la/kaoyanyingyu.jpg?sign=e155d6177756d9cccf31a2bcd601af9c&t=1585844981);"></view>
+          <view class="content">
+            <view class="text-grey">随机推荐</view>
+            <view class="text-gray text-sm flex">
+              <text class="text-cut">
+						为您保驾护航
+              </text>
+            </view>
+          </view>
+          <view class='arrow' bindtap="chooseNumber" data-name="kaoyan_zhengfa"></view>
+        </view>
+        </view>
+        
+        
+
+
+
+
+         <view class="cu-list menu-avatar" wx:if="{{index==0}}">
+        <view class="cu-item">
+          <view class="cu-avatar round lg" style="background-image:url(https://6465-dev-qt1a0-1301454819.tcb.qcloud.la/zhengfa.jpg?sign=25856ac6c77773efea5d15727e9a6ce4&t=1585617323);"></view>
+          <view class="content">
+            <view class="text-grey">政法类</view>
+            <view class="text-gray text-sm flex">
+              <text class="text-cut">
+							政治（政权体制、竞选宣传）和法律（违法犯罪、证据证明、立法守法）
+              </text>
+            </view>
+          </view>
+          <view class='arrow' bindtap="chooseNumber" data-name="kaoyan_zhengfa"></view>
+        </view>
+        
+       
+       
+       <view class="cu-item" >
+          <view class="cu-avatar round lg" style="background-image:url(https://6465-dev-qt1a0-1301454819.tcb.qcloud.la/caijing.jpg?sign=03fc47bb7d3fa4003edb000557b70511&t=1585617987);"></view>
+          <view class="content">
+            <view class="text-grey">
+              <text class="text-cut">财经类</text>
+              <view class="cu-tag round bg-orange sm">hot</view>
+            </view>
+            <view class="text-gray text-sm flex">
+              <text class="text-cut">
+								金融（财政、货币、股票、借贷）和商业（经营和管理、市场和贸易、经济发展）
+							</text>
+            </view>
+          </view>
+          <view class='arrow'></view>
+        </view>
+
+          <view class="cu-item">
+          <view class="cu-avatar radius lg" style="background-image:url(https://6465-dev-qt1a0-1301454819.tcb.qcloud.la/shehui.jpg?sign=f9b3da6c82b52c85961d0554c557eba6&t=1585618008);"></view>
+          <view class="content">
+            <view class="text-pink">
+              <text class="text-cut">社会类</text>
+            </view>
+            <view class="text-gray text-sm flex">
+              <text class="text-cut">民生（农业、人口、公益、生活）、群体（人群、社会关系、社会活动）、职业（工作状态、职业名称、认识、办公用品）、人际（冲突、隐私、社交、名誉）、情感（快乐愤怒沮丧惊奇）、事态事件（困境、灾难、纪念）、宗教民俗（宗教习俗传统传说寓言）、</text>
+            </view>
+          </view>
+           <view class='arrow'></view>
+        </view>
+      
+
+         <view class="cu-item">
+          <view class="cu-avatar radius lg" style="background-image:url(https://6465-dev-qt1a0-1301454819.tcb.qcloud.la/renwen.jpg?sign=b39df4d3ac3ee4db2b46403e8273e344&t=1585618033);"></view>
+          <view class="content">
+            <view class="text-pink">
+              <text class="text-cut">人文类</text>
+            </view>
+            <view class="text-gray text-sm flex">
+              <text class="text-cut">教育（学校教师、学科专业、毕业学位）、文艺（题材风格、表演音乐）、语言（语言学、修辞、翻译）、传媒（媒体出版、图书内容、编辑工作）</text>
+            </view>
+          </view>
+           <view class='arrow'></view>
+        </view>
+
+
+
+ <view class="cu-item cur">
+          <view class="cu-avatar radius lg" style="background-image:url(https://6465-dev-qt1a0-1301454819.tcb.qcloud.la/keji.jpg?sign=2b53cb5e20a03b008fea2140b30e0986&t=1585617891);">
+            <view class="cu-tag badge"></view>
+          </view>
+          <view class="content">
+            <view>
+              <text class="text-cut">科技类</text>
+             
+            </view>
+            <view class="text-gray text-sm flex">
+              <text class="text-cut"> 工业科技（机械动力、工艺技术、创造生产）、信息技术（网络数据、通讯设备）</text>
+            </view>
+          </view>
+           <view class='arrow'></view>
+        </view>
+
+<view class="cu-item cur">
+          <view class="cu-avatar radius lg" style="background-image:url(https://6465-dev-qt1a0-1301454819.tcb.qcloud.la/huanjing.jpg?sign=95acf5357ec514db4d86640c9f39b25f&t=1585617945);">
+            <view class="cu-tag badge"></view>
+          </view>
+          <view class="content">
+            <view>
+              <text class="text-cut">环境类</text>
+             
+            </view>
+            <view class="text-gray text-sm flex">
+              <text class="text-cut"> 自然（天文地理、生态环境、自然现象、自然景观）、气候（气候气象）、环保（环境保护和恶化）</text>
+            </view>
+          </view>
+          <view class='arrow'></view>
+        </view>
+
+
+        <view class="cu-item">
+          <view class="cu-avatar round lg" style="background-image:url(https://6465-dev-qt1a0-1301454819.tcb.qcloud.la/richang.jpg?sign=40e98f67530d9be55edf976cce56812e&t=1585617775);"></view>
+          <view class="content">
+            <view class="text-grey">日常类</view>
+            <view class="text-gray text-sm flex">
+              <text class="text-cut">
+										<text> 饮食（就餐烹饪）、居家（日常用品、装修装饰、日常行为）、休闲（休闲时尚、影视音像）、出行（交通路线、出行方式、远行）</text>
+              </text>
+            </view>
+          </view>
+          <view class='arrow' bindtap="zhengfaRecite"></view>
+        </view>
+        
+<view class="cu-item" >
+          <view class="cu-avatar round lg" style="background-image:url(https://6465-dev-qt1a0-1301454819.tcb.qcloud.la/jiankang.jpg?sign=3a0b8c7d5baea297fe0ec5c41b67140e&t=1585617750);"></view>
+          <view class="content">
+            <view class="text-grey">
+              <text class="text-cut">健康类</text>
+              <view class="cu-tag round bg-orange sm">hot</view>
+            </view>
+            <view class="text-gray text-sm flex">
+              <text class="text-cut">
+										医疗保健（医治医药、营养健康）、疾病（疾病病情）、运动（比赛健身）
+							</text>
+            </view>
+          </view>
+          <view class='arrow'></view>
+        </view>
+
+<view class="cu-item">
+          <view class="cu-avatar radius lg" style="background-image:url(https://6465-dev-qt1a0-1301454819.tcb.qcloud.la/junshi.jpg?sign=f4f4485eb3cf6fa6dfe32978f844d871&t=1585617725);"></view>
+          <view class="content">
+            <view class="text-pink">
+              <text class="text-cut">军事类</text>
+            </view>
+            <view class="text-gray text-sm flex">
+              <text class="text-cut">军事（军事活动、军人荣誉）、战争（战争行为、动乱、战争后果）</text>
+            </view>
+          </view>
+           <view class='arrow'></view>
+        </view>
+
+
+
+        <view class="cu-item">
+          <view class="cu-avatar round lg" style="background-image:url(https://6465-dev-qt1a0-1301454819.tcb.qcloud.la/tongyong.gif?sign=fc0713e860ce5e124d4b764008a25ff1&t=1585617646);"></view>
+          <view class="content">
+            <view class="text-grey">通用类</view>
+            <view class="text-gray text-sm flex">
+              <text class="text-cut">
+										<text> 行为（言语行为、声音行为、视觉行为、肢体行为）、动作（敲打、刺戳、抓捏、推拉）、抽象（概念、思考、记忆、感觉发现、促进激发、专注追求、关联表示、方式习惯）、现象（发光闪烁、发展变化）、态度（积极消极中性）、观点（看法主张建议对立假设）、逻辑（概念关系）、变化（改变、出现开始、小时结束、妨碍破坏、发展影响、升降涨跌）、状态（人时间数量等有关的状态）、形态（平面、立体）、品质（品德、优良品质、不良品质）、特征（人物、事物、程度、抽象特征）、程度（水平、增减、重要性）、范围（概念空间容纳）、数量（数、量、量词）、方位（方向、位置）、地点（地方地点）、时间（时刻、时段、时限、时代、时间顺序）</text>
+              </text>
+            </view>
+          </view>
+          <view class='arrow' bindtap="zhengfaRecite"></view>
+        </view>
+ 
+ </view>
+        
+        </view>
+  </scroll-view>
+</view>

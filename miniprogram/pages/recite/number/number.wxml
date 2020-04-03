@@ -1,0 +1,30 @@
+
+  <view class="bg" style="opacity:{{1}}">
+    <image class="bg-image" mode="scaleToFill"></image>
+
+<view class='list-msg'>
+    <view class='list-msg1'>
+        <text>请选择要背诵的单词个数</text>
+        <text>我会科学地为您推荐</text>
+    </view>
+<!--下拉框  -->
+    <view class='list-msg2' bindtap='bindShowMsg'>
+        <text>{{number}}</text>
+    </view>
+
+<!-- 下拉需要显示的列表 -->
+    <view class="select_box" wx:if="{{select}}">
+          <view class="select_one" bindtap="mySelect" data-name="30">30</view>
+        <view class="select_one" bindtap="mySelect" data-name="40">40</view>
+        <view class="select_one" bindtap="mySelect" data-name="50">50</view>
+        <view class="select_one" bindtap="mySelect" data-name="60">60</view>
+         <view class="select_one" bindtap="mySelect" data-name="70">70</view>
+       
+    </view>
+</view>
+
+<view class="cu-bar  solid-bottom">
+ <button class="cu-btn bg-green margin-tb-sm lg" bindtap="Reciting">开启背诵之旅</button>
+</view>
+  </view>
+  

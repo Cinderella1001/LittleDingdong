@@ -1,0 +1,64 @@
+.bg{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:url('https://6465-dev-qt1a0-1301454819.tcb.qcloud.la/word.gif?sign=0acc1a89d479802ccaadbd7412985276&t=1585711980') 
+no-repeat #000;
+background-size:cover;
+z-index:-1;
+}
+
+.bg-img{
+    width : 100%;
+    height : 100%;
+}
+ 
+.list-msg {
+
+   
+   padding: 20rpx 20rpx;
+    position:relative;
+}
+.list-msg1 {
+    height: 60rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.list-msg .list-msg2 {
+    height: 60rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    padding: 0 10rpx;
+}
+ 
+.select_box {
+    background-color: #eee;
+    padding: 0 10rpx;
+    width: 93%;
+    position: absolute;
+    top: 130rpx;
+    z-index: 1;
+    overflow: hidden;
+    animation: myfirst 0.5s;
+}
+ 
+@keyframes myfirst {
+    from {
+        height: 0rpx;
+    }
+ 
+    to {
+        height: 210rpx;
+    }
+}
+ 
+.select_one {
+    height: 60rpx;
+    line-height: 60rpx;
+    border-bottom: 1px solid #ccc;
+}

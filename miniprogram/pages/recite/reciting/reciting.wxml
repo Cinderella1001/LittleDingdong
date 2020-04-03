@@ -1,0 +1,38 @@
+  <view class="root">
+  <view class=" bg-white solid-bottom margin-top">
+<view class="footer">
+
+ <text >今日复习</text>
+ <text> 今日新词</text>
+ <text>学习时间</text>
+</view>
+<view class="footer">
+<text> 6/{{number}}</text>
+<text> 24/{{number}}</text>
+<text> 15min</text>
+</view>
+</view>
+ <scroll-view class="content" scroll-y>
+</scroll-view>
+ <view class="portals">
+        <view class="item">
+        <image src="https://6465-dev-qt1a0-1301454819.tcb.qcloud.la/hui.png?sign=e13f760acf9ce325790c98418faa179b&t=1585833484"></image>
+        <text>我认识哦</text>
+        </view>
+
+         <view class="item">
+       <image src="https://6465-dev-qt1a0-1301454819.tcb.qcloud.la/tishi.png?sign=c428f369269788bd9518affc139ef940&t=1585833526"></image>
+        <text>有点模糊呢</text>
+        </view>
+
+         <view class="item">
+        <image src="https://6465-dev-qt1a0-1301454819.tcb.qcloud.la/buhui.png?sign=e4f8a14136ab8f675eccc4659747a02a&t=1585833411"></image>
+        <text>提示一下呗</text>
+        </view>
+
+         <view class="item">
+        <image src="https://6465-dev-qt1a0-1301454819.tcb.qcloud.la/lajitong.png?sign=7a6a95ea7c6a17e50bbec01d08c7649e&t=1585833455"></image>
+        <text>已认识抛弃它</text>
+        </view>
+ </view>
+ </view>

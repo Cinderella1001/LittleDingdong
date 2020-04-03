@@ -1,0 +1,21 @@
+/* pages/recite/home/home.wxss */
+
+.list .inner{
+margin:60px 10px;
+display:flex;
+flex-wrap:wrap;
+}
+.list .inner .item{
+width:33.333333%;
+}
+.list .inner .item image{
+width:120px;
+height:120px;
+display:block;
+margin:0 auto;
+}
+.list .inner .item text{
+font-size:14px;
+text-align: center;
+display:block;
+}

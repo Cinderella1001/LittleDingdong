@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/share/share",
+    "pages/recite/home/home",
+    "pages/index/index",
+    "pages/search/home/home",
+    "pages/recite/kaoyan/kaoyan",
+    "pages/recite/daily/daily",
+    "pages/team/home/home",
+    "pages/tree/home/home",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+    "pages/openapi/openapi",
+    "pages/openapi/serverapi/serverapi",
+    "pages/openapi/callback/callback",
+    "pages/openapi/cloudid/cloudid",
+    "pages/im/im",
+    "pages/im/room/room",
+    "pages/tree/drop/drop",
+    "pages/tree/plant/plant",
+    "pages/recite/number/number",
+    "pages/recite/reciting/reciting"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "滴水穿词",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+
+  "plugins": {
+    "sdkPlugin": {
+      "version": "3.9.0",
+      "provider": "wxc6b86e382a1e3294"
+    }
+  }
+}

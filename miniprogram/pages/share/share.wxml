@@ -1,0 +1,40 @@
+<search wx:if="{{PageCur=='search'}}"></search>
+<recite wx:if="{{PageCur=='recite'}}"></recite>
+<team wx:if="{{PageCur=='team'}}"></team>
+<tree wx:if="{{PageCur=='tree'}}"></tree>
+<view class="cu-bar tabbar bg-white shadow foot">
+ 
+   <view class="action" bindtap="NavChange" data-cur="search">
+
+    <view class='cuIcon-cu-image'>
+      <image src="/images/tabbar/basics{{PageCur=='search'?'_cur':''}}.png"></image>
+    </view>
+
+    <view class="{{PageCur=='search'?'text-green':'text-gray'}}">查询</view>
+
+  </view>
+
+  <view class="action" bindtap="NavChange" data-cur="recite">
+
+    <view class='cuIcon-cu-image'>
+      <image src="/images/tabbar/component{{PageCur=='recite'?'_cur':''}}.png"></image>
+    </view>
+
+    <view class="{{PageCur=='recite'?'text-green':'text-gray'}}">背诵</view>
+
+  </view>
+
+  <view class="action" bindtap="NavChange" data-cur="team">
+    <view class='cuIcon-cu-image'>
+      <image src="/images/tabbar/plugin{{PageCur=='team'?'_cur':''}}.png"></image>
+    </view>
+    <view class="{{PageCur=='team'?'text-green':'text-gray'}}">乐趣</view>
+  </view>
+
+  <view class="action" bindtap="NavChange" data-cur="tree">
+    <view class='cuIcon-cu-image'>
+      <image src="/images/tabbar/about{{PageCur=='tree'?'_cur':''}}.png"></image>
+    </view>
+    <view class="{{PageCur=='tree'?'text-green':'text-gray'}}">植树</view>
+  </view>
+</view>
